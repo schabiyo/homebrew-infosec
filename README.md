@@ -9,5 +9,5 @@ Then:
 ```
 brew tap schabiyo/infosec
   
-brew install infosec-agent
+brew install infosec
 ```

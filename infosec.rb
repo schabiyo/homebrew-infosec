@@ -1,9 +1,9 @@
-require "formula"
+require "FileUtils"
 
 class Infosec < Formula
   desc "CLI to deploy Frontend modules"
   homepage "https://github.com/schabiyo/infosec"
-  url "https://github.com/schabiyo/infosec/releases/download/v0.1.4/fed-cli-darwin-amd64-0.1.4.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+  url "https://github.com/schabiyo/infosec/releases/download/v0.1.4/fed-cli-darwin-amd64-0.1.4.tar.gz"
   sha256 "c4bb34abd18ef743572c085fcbaf0a4d5c0770a7c889ae5ce422213bb35e80d4"
   head "https://github.com/schabiyo/infosec.git"
 
