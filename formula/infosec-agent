@@ -1,6 +1,6 @@
 require "formula"
 
-class InfoSec < Formula
+class Infosec < Formula
   desc "CLI to deploy Frontend modules"
   homepage "https://github.com/schabiyo/infosec"
   url "https://github.com/schabiyo/infosec/releases/download/v0.1.4/fed-cli-darwin-amd64-0.1.4.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
@@ -8,7 +8,7 @@ class InfoSec < Formula
   head "https://github.com/schabiyo/infosec.git"
 
   def install
-    bin.install "infosec-agent"
+    bin.install "infosec"
   end
 
   # Homebrew requires tests.
