@@ -5,11 +5,6 @@ class Agilescan < Formula
   homepage "https://github.com/schabiyo/infosec"
   head "https://github.com/schabiyo/infosec.git"
 
-  if !OS.linux?
-    url "https://github.com/schabiyo/infosec/releases/download/v1/agilescan_macOs_64bit.zip"
-    sha256 "9ee30fc358fae8d248a2d7538957089885da321dca3f09e3296fe2058e7ff74"
-    abort(" Sorry Your Os is not supported")
-  end
   if OS.linux? && Hardware::CPU.intel?
     puts "Linux and CPU Intel".inspect
     url "https://github.com/schabiyo/infosec/releases/download/v1/agilescan_Linux_64bit.zip"
@@ -30,7 +25,6 @@ class Agilescan < Formula
     abort("Windows is not supported")
   end
 
-  depends_on "git"
   depends_on "zsh" => :optional
 
   def install
